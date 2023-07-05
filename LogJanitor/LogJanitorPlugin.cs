@@ -54,7 +54,8 @@ namespace LogJanitor
         /// </summary>
         public override void OnInitialize()
         {
-            RebornBuddyUiHelpers.AddMainMenuButton("View Full Logs", (sender, e) => Process.Start("explorer.exe", $@"/select,""{Logging.LogFilePath}"""));
+            Logging.WriteDiagnostic("Log Janitor enabled");
+            // RebornBuddyUiHelpers.AddMainMenuButton("View Full Logs", (sender, e) => Process.Start("explorer.exe", $@"/select,""{Logging.LogFilePath}"""));
         }
 
         /// <summary>
